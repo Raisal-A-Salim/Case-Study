@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Home</title>
+    <link rel="stylesheet" href="Transaction_Home.css">
+</head>
+<body>
+
+    <div class="form-wrapper">
+
+        <form method="post">
+
+            <table>
+
+                <tr>
+                    <td colspan="3" align="center">
+                        <h2 class="form-title">Add Transaction Details</h2>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Transaction ID</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="TransID" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Customer Full Name</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="CustomerName" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Account ID</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="AccountID" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Aadhar Card No</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text"
+                               name="Aadhar"
+                               pattern="[0-9]{12}"
+                               inputmode="numeric"
+                               title="Enter a valid 12 digit Aadhaar Number"
+                               maxlength="12"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Pan Card No</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text"
+                               name="PAN"
+                               pattern="[A-Z]{5}[0-9]{4}[A-Z]"
+                               oninput="this.value = this.value.toUpperCase()"
+                               title="Enter a valid Pan Number"
+                               maxlength="10"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="Address" required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Transaction</td>
+                    <td>:</td>
+                    <td>
+                        <input type="date" name="TransDate" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Contact Number</td>
+                    <td>:</td>
+                    <td>
+                        <input type="tel"
+                               name="Contact"
+                               pattern="^[6-9][0-9]{9}$"
+                               inputmode="numeric"
+                               title="Enter a valid 10 digit Phone Number"
+                               maxlength="10"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mode of Transaction</td>
+                    <td>:</td>
+                    <td>
+                        <select name="TransMode" required>
+                            <option value="">--Select--</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Cheque">Cheque</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Amount of Transaction</td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" name="TransAmount" min="1" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Credit/Debit</td>
+                    <td>:</td>
+                    <td>
+                        <select name="TransType" required>
+                            <option value="">-- Select --</option>
+                            <option value="Credit">Credit</option>
+                            <option value="Debit">Debit</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" align="center">
+                        <input value="Add Transaction" type="submit" onclick="return confirm('Confirm transaction submission?')">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
