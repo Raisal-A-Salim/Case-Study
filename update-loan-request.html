@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TARA Bank | Update/Cancel Loan Request</title>
+    <link rel="stylesheet" href="update-loan-request.css">
+</head>
+<body>
+
+<div class="loan-container">
+
+    <h1 class="bank-title">TARA BANK</h1>
+    <p class="subtitle">Update/Cancel Loan Request</p>
+
+    <!-- Message Area -->
+    <div id="message" class="message"></div>
+
+    <form onsubmit="return updateLoan()">
+
+        <label>Customer SSN ID</label>
+        <input type="text" value="123-45-6789" readonly>
+
+        <label>Customer Name</label>
+        <input type="text" value="John Doe">
+
+        <label>Occupation</label>
+        <input type="text" value="Software Engineer">
+
+        <label>Employer Name</label>
+        <input type="text" value="ABC Technologies">
+
+        <label>Employer Address</label>
+        <textarea>Technopark, Trivandrum</textarea>
+
+        <label>Email</label>
+        <input type="email" value="john.doe@email.com">
+
+        <label>Address</label>
+        <textarea>Kazhakkoottam, Kerala</textarea>
+
+        <label>Marital Status</label>
+        <select>
+            <option selected>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+        </select>
+
+        <label>Contact Number</label>
+        <input type="text" maxlength="10" value="9876543210">
+
+        <label>Loan Amount</label>
+        <input type="number" value="500000">
+
+        <label>Length of Loan (in Quarters)</label>
+        <input type="number" value="12">
+
+        <button type="submit">Update Loan</button>
+        <button type="submit">Cancel Loan</button>
+
+    </form>
+
+</div>
+
+<script>
+function updateLoan() {
+    const msg = document.getElementById("message");
+
+    // Static success simulation
+    const success = true;
+
+    if (success) {
+        msg.className = "message success";
+        msg.innerText = "Loan details updated successfully.";
+    } else {
+        msg.className = "message error";
+        msg.innerText = "Unable to update loan. Please try again.";
+    }
+
+    return false; // prevent actual submit
+}
+</script>
+
+</body>
+</html>

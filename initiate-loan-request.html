@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TARA Bank | Initiate Loan Request</title>
+    <link rel="stylesheet" href="initiate-loan-request.css">
+</head>
+<body>
+
+    <div class="loan-container">
+
+        <!-- Title -->
+        <h1 class="bank-title">TARA BANK</h1>
+        <p class="subtitle">Initiate Loan Request</p>
+
+        <!-- Loan Form -->
+        <form class="loan-form">
+
+            <label>Customer SSN ID</label>
+            <input type="text" required>
+
+            <label>Customer Name</label>
+            <input type="text" required>
+
+            <label>Occupation</label>
+            <input type="text" required>
+
+            <label>Employer Name</label>
+            <input type="text" required>
+
+            <label>Employer Address</label>
+            <textarea required></textarea>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Address</label>
+            <textarea required></textarea>
+
+            <label>Marital Status</label>
+            <select required>
+                <option value="">Select</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+            </select>
+
+            <label>Contact Number</label>
+            <input type="text" maxlength="10" required>
+
+            <label>Loan Amount</label>
+            <input type="number" required>
+
+            <label>Length of Loan (in Quarters)</label>
+            <input type="number" required>
+
+            <button type="submit">Submit Loan Request</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

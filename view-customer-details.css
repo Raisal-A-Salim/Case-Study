@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #e6f4ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-container {
+    width: 420px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.bank-title {
+    font-size: 36px;
+    color: #0077b6;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0077b6;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f8a;
+}

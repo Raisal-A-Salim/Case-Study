@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #e6f4ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-container {
+    text-align: center;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.bank-title {
+    font-size: 60px;
+    color: #0077b6;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.image-section img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 14px 35px;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color: #0077b6;
+    color: #ffffff;
+}
+
+.login-btn:hover {
+    background-color: #005f8a;
+}
+
+.register-btn {
+    background-color: #ffffff;
+    color: #0077b6;
+    border: 2px solid #0077b6;
+}
+
+.register-btn:hover {
+    background-color: #0077b6;
+    color: #ffffff;
+}
