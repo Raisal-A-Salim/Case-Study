@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #e6f4ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bank-title {
+    font-size: 36px;
+    color: #0077b6;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0077b6;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #005f8a;
+}
+.main-footer {
+    margin-top: auto;
+    padding: var(--spacing-lg);
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    background: var(--color-secondary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

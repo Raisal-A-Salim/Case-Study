@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARA Bank - Trusted • Advanced • Reliable</title>
+    <link rel="stylesheet" href="Assets/CSS/admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .landing-images {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .landing-images img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-card);
+            transition: transform var(--transition-fast);
+        }
+
+        .landing-images img:hover {
+            transform: translateY(-5px);
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--color-action);
+            color: var(--color-action);
+        }
+
+        .btn-outline:hover {
+            background: var(--color-action);
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="dashboard-body">
+
+    <!-- navigation -->
+    <nav class="dashboard-nav">
+        <a href="index.html" class="nav-logo">TARA BANK</a>
+
+        <div class="nav-links">
+            <a href="Pages/employee-login.html" class="nav-item">Login</a>
+            <a href="Pages/employee-register.html" class="nav-item">Register</a>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="dashboard-container fade-in" style="text-align: center; justify-content: center;">
+
+        <div class="welcome-section">
+            <h1 class="welcome-title" style="font-size: 3.5rem; margin-bottom: 0.5rem;">TARA BANK</h1>
+            <p class="welcome-subtitle" style="font-size: 1.2rem;">Trusted • Advanced • Reliable</p>
+        </div>
+
+        <div class="landing-images">
+            <img src="images/bank1.png" alt="Bank Image 1">
+            <img src="images/bank2.png" alt="Bank Image 2">
+            <img src="images/bank3.png" alt="Bank Image 3">
+        </div>
+
+        <div class="action-buttons">
+            <a href="Pages/employee-login.html" class="btn btn-primary">Login to Account</a>
+            <a href="Pages/employee-register.html" class="btn btn-outline">Create New Account</a>
+        </div>
+
+    </main>
+
+    <footer class="main-footer" style="background: transparent;">
+        © TARA BANK
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARA Bank | Employee Registration</title>
+    <link rel="stylesheet" href="../Assets/CSS/admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-card fade-in" style="max-width: 800px;">
+        <h1>TARA BANK <span
+                style="font-weight:400; font-size: 0.6em; display:block; margin-top:0.5rem; color:var(--color-text-muted);">Employee
+                Registration</span></h1>
+
+        <form onsubmit="return registerEmployee()" class="login-form">
+
+            <div class="form-group">
+                <label for="empId" class="form-label">Employee ID</label>
+                <input type="text" id="empId" class="form-input" readonly placeholder="Auto generated">
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-input" maxlength="50" required placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-input" maxlength="50" required placeholder="Last Name">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" required placeholder="employee@tara.com">
+            </div>
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" maxlength="30" required
+                            placeholder="Create Password">
+                    </div>
+                </div>
+                <div class="form-col">
+                    <div class="form-group">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" id="confirmPassword" class="form-input" maxlength="30" required
+                            placeholder="Confirm Password">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Address</label>
+                <textarea class="form-textarea" maxlength="100" required placeholder="Enter full address"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Contact Number</label>
+                <input type="text" class="form-input" maxlength="10" required placeholder="Mobile Number">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" style="margin-top: 1rem;">Register Employee</button>
+
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="../index.html"
+                    style="text-decoration: none; color: var(--color-text-muted); font-size: 0.9rem;">← Back to Home</a>
+            </div>
+        </form>
+    </div>
+
+    <footer class="main-footer" style="background: transparent;">
+        © TARA BANK
+    </footer>
+
+</body>
+
+</html>

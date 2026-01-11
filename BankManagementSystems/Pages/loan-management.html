@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARA Bank | Loan Management</title>
+    <link rel="stylesheet" href="../Assets/CSS/admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Dashboard Navigation -->
+    <nav class="dashboard-nav">
+        <a href="admin_home.html" class="nav-logo">TARA BANK <span
+                style="font-weight:400; font-size: 0.9em; opacity: 0.7;">| Admin</span></a>
+
+        <div class="nav-links">
+            <div class="user-badge">
+                <span>Admin User</span>
+            </div>
+            <a href="admin_home.html" class="nav-item">Dashboard</a>
+            <a href="../index.html" class="nav-item danger">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-container fade-in">
+
+        <div class="welcome-section">
+            <h1 class="welcome-title">Loan Management</h1>
+            <p class="welcome-subtitle">Process new applications or manage existing loans.</p>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <!-- Initiate Loan -->
+            <a href="initiate-loan-request.html" class="dash-card">
+                <div class="card-icon"></div>
+                <div>
+                    <h3 class="card-title">Initiate Loan Request</h3>
+                    <p class="card-desc">Create a new loan application for a customer.</p>
+                </div>
+                <div class="card-arrow">Start Application →</div>
+            </a>
+
+            <!-- Update Loan -->
+            <a href="update-loan-request.html" class="dash-card">
+                <div class="card-icon"></div>
+                <div>
+                    <h3 class="card-title">Update/Cancel Request</h3>
+                    <p class="card-desc">Modify details or cancel an existing loan request.</p>
+                </div>
+                <div class="card-arrow">Manage Requests →</div>
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer class="main-footer" style="background: transparent;">
+        © TARA BANK
+    </footer>
+
+</body>
+
+</html>

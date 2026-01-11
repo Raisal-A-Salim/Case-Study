@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration - TARA BANK</title>
+    <link rel="stylesheet" href="Assets\CSS\admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Registration Content -->
+    <main class="auth-page">
+        <div class="auth-card fade-in">
+
+            <!-- FORM SECTION -->
+            <div id="registrationSection">
+                <h1>Employee Registration</h1>
+                <form id="registerForm" onsubmit="event.preventDefault(); handleRegistration();">
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" class="form-input" maxlength="50" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" class="form-input" maxlength="50" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-input" maxlength="30" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" id="confirmPassword" class="form-input" maxlength="30" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea id="address" class="form-textarea" maxlength="100" placeholder="Street, City..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="tel" id="contact" class="form-input" maxlength="10" required pattern="[0-9]{10}"
+                            title="10 digit mobile number">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Register</button>
+
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="index.html"
+                            style="color: var(--color-action); font-size: 0.9rem; text-decoration: none;">Back to
+                            Home</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- ACKNOWLEDGMENT SECTION -->
+            <div id="ackSection" class="ack-screen">
+                <div class="ack-icon">✓</div>
+                <h2 style="color: #059669; margin-bottom: 0.5rem;">Success!</h2>
+                <p>Employee Registration successful.</p>
+
+                <div class="ack-details">
+                    <div class="ack-field">
+                        <span class="ack-label">Employee ID</span>
+                        <div id="generatedId" class="ack-value"
+                            style="color: var(--color-action); letter-spacing: 1px;">-</div>
+                    </div>
+
+                    <div class="ack-field">
+                        <span class="ack-label">Employee Name</span>
+                        <div id="ackName" class="ack-value">-</div>
+                    </div>
+
+                    <div class="ack-field">
+                        <span class="ack-label">Email</span>
+                        <div id="ackEmail" class="ack-value" style="word-break: break-all;">-</div>
+                    </div>
+                </div>
+
+                <button onclick="window.location.href='index.html'" class="btn btn-primary btn-full"
+                    style="margin-top: 1.5rem;">Return to Home</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        © TARA BANK
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

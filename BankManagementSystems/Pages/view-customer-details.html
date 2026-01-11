@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARA Bank | View Customer Details</title>
+    <link rel="stylesheet" href="../Assets/CSS/admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Dashboard Navigation -->
+    <nav class="dashboard-nav">
+        <a href="admin_home.html" class="nav-logo">TARA BANK <span
+                style="font-weight:400; font-size: 0.9em; opacity: 0.7;">| Admin</span></a>
+
+        <div class="nav-links">
+            <div class="user-badge">
+                <span>Admin User</span>
+            </div>
+            <a href="admin_home.html" class="nav-item">Dashboard</a>
+            <a href="../index.html" class="nav-item danger">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-container fade-in">
+
+        <div class="welcome-section">
+            <h1 class="welcome-title">Customer Details</h1>
+            <p class="welcome-subtitle">Search and view customer account information.</p>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <div class="auth-card" style="box-shadow: var(--shadow-card); max-width: 500px;">
+                <form>
+                    <div class="form-group">
+                        <label for="ssn" class="form-label">Customer SSN ID</label>
+                        <input type="text" id="ssn" class="form-input" placeholder="Enter Customer SSN ID" required>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-full">View Details</button>
+
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="admin_home.html"
+                            style="color: var(--color-text-muted); text-decoration: none; font-size: 0.9rem;">← Back to
+                            Dashboard</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer" style="background: transparent;">
+        © TARA BANK
+    </footer>
+
+</body>
+
+</html>
