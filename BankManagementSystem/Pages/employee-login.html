@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARA Bank | Employee Login</title>
+    <link rel="stylesheet" href="..\Assets\CSS\employee-login.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <!-- Bank Title -->
+        <h1 class="bank-title">TARA BANK</h1>
+        <p class="subtitle">Employee Login</p>
+
+        <!-- Login Form -->
+        <form class="login-form">
+            <div class="form-group">
+                <label for="employeeId">Employee ID</label>
+                <input 
+                    type="text" 
+                    id="employeeId" 
+                    name="employeeId"
+                    maxlength="10"
+                    placeholder="Enter Employee ID"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password"
+                    maxlength="30"
+                    placeholder="Enter Password"
+                    required>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

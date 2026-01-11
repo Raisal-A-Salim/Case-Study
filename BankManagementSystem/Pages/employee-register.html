@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TARA Bank | Employee Registration</title>
+    <link rel="stylesheet" href="..\Assets\CSS\employee-register.css">
+</head>
+<body>
+
+<div class="register-container">
+    <h1 class="bank-title">TARA BANK</h1>
+    <p class="subtitle">Employee Registration</p>
+
+    <form onsubmit="return registerEmployee()">
+
+        <label>Employee ID</label>
+        <input type="text" id="empId" readonly>
+
+        <label>First Name</label>
+        <input type="text" maxlength="50" required>
+
+        <label>Last Name</label>
+        <input type="text" maxlength="50" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Password</label>
+        <input type="password" id="password" maxlength="30" required>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" maxlength="30" required>
+
+        <label>Address</label>
+        <textarea maxlength="100" required></textarea>
+
+        <label>Contact Number</label>
+        <input type="text" maxlength="10" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

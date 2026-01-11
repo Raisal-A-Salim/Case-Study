@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TARA BANK</title>
+    <link rel="stylesheet" href="../Assets/CSS/admin_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- Dashboard Navigation -->
+    <nav class="dashboard-nav">
+        <a href="admin_home.html" class="nav-logo">TARA BANK <span
+                style="font-weight:400; font-size: 0.9em; opacity: 0.7;">| Admin</span></a>
+
+        <div class="nav-links">
+            <div class="user-badge">
+                <span>Admin User</span>
+            </div>
+            <a href="#" class="nav-item">Help</a>
+            <a href="#" class="nav-item" onclick="changeUser()">Change User</a>
+            <a href="#" class="nav-item danger" onclick="logout()">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-container fade-in">
+
+        <div class="welcome-section">
+            <h1 class="welcome-title">Welcome back, Admin</h1>
+            <p class="welcome-subtitle">Select a management module to proceed.</p>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <!-- Transaction Management -->
+            <a href="transaction_mgmt.html" class="dash-card">
+                <div class="card-icon"></div>
+                <div>
+                    <h3 class="card-title">Transaction Management</h3>
+                    <p class="card-desc">Monitor, approve, and audit daily banking transactions.</p>
+                </div>
+                <div class="card-arrow">Access Module →</div>
+            </a>
+
+            <!-- Customer Management -->
+            <a href="customer_mgmt.html" class="dash-card">
+                <div class="card-icon"></div>
+                <div>
+                    <h3 class="card-title">Customer Management</h3>
+                    <p class="card-desc">Onboard new customers, update profiles, and manage accounts.</p>
+                </div>
+                <div class="card-arrow">Access Module →</div>
+            </a>
+
+            <!-- Loan Management -->
+            <a href="loan_mgmt.html" class="dash-card">
+                <div class="card-icon"></div>
+                <div>
+                    <h3 class="card-title">Loan Management</h3>
+                    <p class="card-desc">Process loan applications, track approvals and repayments.</p>
+                </div>
+                <div class="card-arrow">Access Module →</div>
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer class="main-footer" style="background: transparent;">
+        © TARA BANK
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
